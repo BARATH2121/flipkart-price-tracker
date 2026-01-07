@@ -1,0 +1,41 @@
+/* PriceChart Styling */
+.price-chart-container {
+  background: linear-gradient(135deg, #0f172a 0%, #1a2940 100%);
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 8px 32px rgba(0, 212, 255, 0.15);
+  margin-bottom: 24px;
+}
+
+.price-chart-container h3 {
+  color: #00d4ff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.no-data {
+  color: #8b9bc1;
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 1.1rem;
+}
+
+.chart-canvas {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .price-chart-container {
+    padding: 20px;
+  }
+
+  .price-chart-container h3 {
+    font-size: 1.1rem;
+  }
+}
