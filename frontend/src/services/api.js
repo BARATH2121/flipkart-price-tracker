@@ -70,4 +70,10 @@ export const userAPI = {
   updatePreferences: (preferences) => api.put('/user/preferences', preferences),
 }
 
+// Convenience wrapper functions for ProductDetail page
+export const getProductDetail = (productId) => productAPI.getProductById(productId)
+
+export const updateNotificationSettings = (productId, settings) =>
+  alertAPI.updateAlert(productId, settings)
+
 export default api
