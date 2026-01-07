@@ -58,3 +58,52 @@ export const VALIDATION = {
 
 // Toast Message Duration
 export const TOAST_DURATION = 3000 // 3 seconds
+
+
+// ============================================
+// API Endpoints
+// ============================================
+export const API_ENDPOINTS = {
+  // Authentication
+  AUTH: {
+    REGISTER: '/auth/register',
+    LOGIN: '/auth/login',
+    PROFILE: '/auth/profile',
+    LOGOUT: '/auth/logout',
+  },
+  // Products
+  PRODUCTS: {
+    BASE: '/products',
+    LIST: '/products',
+    DETAIL: (id) => `/products/${id}`,
+    DELETE: (id) => `/products/${id}`,
+    PRICE_HISTORY: (id) => `/products/${id}/price-history`,
+    ANALYTICS: (id) => `/products/${id}/analytics`,
+  },
+  // Alerts
+  ALERTS: {
+    BASE: '/alerts',
+    LIST: '/alerts',
+    CREATE: '/alerts',
+    DETAIL: (id) => `/alerts/${id}`,
+    UPDATE: (id) => `/alerts/${id}`,
+    DELETE: (id) => `/alerts/${id}`,
+    PRODUCT: (productId) => `/alerts/product/${productId}`,
+    NOTIFICATIONS: '/alerts/notifications',
+  },
+  // User
+  USER: {
+    PROFILE: '/user/profile',
+    PREFERENCES: '/user/preferences',
+  },
+}
+
+// ============================================
+// API Request Config
+// ============================================
+export const API_CONFIG = {
+  TIMEOUT: 30000,
+  RETRY_ATTEMPTS: 3,
+  RETRY_DELAY: 1000,
+  CACHE_DURATION: 5 * 60 * 1000, // 5 minutes
+}
